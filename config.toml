@@ -1,0 +1,19 @@
+baseURL = "http://example.org/"
+languageCode = "fr"
+title = "My New Hugo Site"
+[menu]
+  [[menu.main]]
+    name = "Accueil"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Articles"
+    pre = "pen-tool"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "Fonctionnalités"
+    pre = "tag"
+    url = "/features/"
+    weight = 3

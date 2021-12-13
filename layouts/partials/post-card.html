@@ -1,0 +1,5 @@
+<h2>{{ .Title }}</h2>
+<div>{{ .Summary }}</div>
+{{ with .Resources.GetMatch "image.jpg" }}
+  <!-- <img src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}"> -->
+{{ end }}

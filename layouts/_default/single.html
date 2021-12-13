@@ -1,0 +1,9 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ partial "metadata.html" . }}
+{{ with .Resources.GetMatch "image.jpg" }}
+  <img src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}">
+{{ end }}
+<br><br>
+{{ .Content }}
+{{ end }}

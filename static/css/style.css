@@ -1,0 +1,103 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('/fonts/Montserrat/Montserrat-Medium.ttf');
+}
+body {
+    --primary-color: #8AD5E4;
+    --secondary-color: #2B70B1;
+    --tertiary-color: #2B3E7F;
+    font-family: Montserrat, Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*
+*
+*   NAVBAR
+*
+*/
+#nav-border {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+.nav {
+    max-height: 74px;
+    width: 1024px;
+    display: flex;
+}
+.nav > .logo {
+    flex-basis: 270px;
+    flex-grow: 1;
+}
+.nav > .logo > img {
+    max-width: 270px;
+}
+.nav > .links {
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+.nav > .links >.link {
+    position: relative;
+}
+.nav > .links > .link > a { 
+    color: #919191;
+    text-decoration: none;
+}
+.nav > .links > .link:hover > a { 
+    color: #2b2929;
+    text-decoration: none;
+}
+.nav > .links > .link:hover > a::after {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    background-color: var(--secondary-color);
+    bottom: -5px;
+    left: calc(50% - 15px);
+}
+/*
+*
+*   HOMEPAGE BANNER
+*
+*/
+.banner {
+    height: 627px;
+    position: relative;
+}
+.banner > div {
+    position: absolute;
+    top: 0px;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+.banner > .banner-text {
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner > .banner-text > .banner-title,
+.banner > .banner-text > .banner-subtitle {
+    max-width: 45%;
+    padding: 0 0 0 8%
+}
+.banner > .banner-text .banner-title {
+    color: #09204C;
+    font-size: xxx-large;
+}
+.banner > .banner-text .banner-subtitle {
+    color: #ACB5C6;
+    font-size: x-large;
+}
+.banner > .banner-background {
+    z-index: 10;
+}
+.banner > .banner-background > img {
+    max-width: 100%;
+}
