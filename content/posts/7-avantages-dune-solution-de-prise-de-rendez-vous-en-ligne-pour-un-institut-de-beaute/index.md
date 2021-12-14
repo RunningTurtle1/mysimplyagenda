@@ -1,7 +1,7 @@
 ---
 title: "7 avantages d'une solution de prise de rendez-vous en ligne pour un institut de beauté"
 date: 2021-12-07T20:26:32+02:00
-draft: true
+draft: false
 type: 'post'
 ---
 
