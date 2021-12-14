@@ -1,8 +1,17 @@
 .flex-container {
     display: flex;
+    align-items: stretch;
+    max-width: 1140px;
+    margin: auto;
+    margin-top: 60px;
 }
 .flex-container > .content {
     flex-grow: 1;
+}
+.content.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .content > .text-content > .stripe {
     content: "";

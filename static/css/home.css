@@ -1,3 +1,6 @@
+.flex-container {
+    min-height: 569px;
+}
 /*
 *
 *   HOMEPAGE BANNER
@@ -46,11 +49,11 @@
 .banner > .banner-background > img {
     max-width: 100%;
 }
-#request-demo-button:hover, #request-demo-button:focus {
+.msa-button:hover, .msa-button:focus {
     color: #FFFFFF;
     background-color: #3160FAF2;
 }
-#request-demo-button {
+.msa-button {
     font-family: "Muli", Sans-serif;
     font-size: 12px;
     font-weight: 700;
@@ -63,9 +66,9 @@
     padding: 20px 10px 20px 15px;
     transition: transform 400ms ease-out ;
 }
-#request-demo-button:active, 
-#request-demo-button:focus, 
-#request-demo-button:hover {
+.msa-button:active, 
+.msa-button:focus, 
+.msa-button:hover {
     transform: scale(0.9);
 }
 #play-button-container {
@@ -99,4 +102,16 @@
 }
 #boost-text {
     max-width: 327px;
+}
+#experience-container > .content:nth-child(2) {
+    background-image: url("/images/Vector-logo.png");
+}
+#experience-text {
+    max-width: 550px;
+}
+#experience-image {
+    max-width: 569px;
+}
+#experience-image > img {
+    max-width: 100%;
 }
