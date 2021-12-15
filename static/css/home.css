@@ -115,3 +115,26 @@
 #experience-image > img {
     max-width: 100%;
 }
+
+/*
+*
+*   COUNTER
+*
+*/
+.counter {
+    display: flex;
+    justify-content: space-between;
+}
+.counter-elt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.counter-elt > .counter-title {
+    font-size: 39px;
+    font-family: MontserratBold;
+}
+.counter-elt > .counter-desc {
+    font-size: 14px;
+    color: #999;
+}
