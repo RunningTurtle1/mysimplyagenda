@@ -13,9 +13,16 @@
     justify-content: center;
     align-items: center;
 }
+.content > div {
+    margin-top: 30px;
+}
+.text-content.centered {
+    text-align: center;
+}
 .content > .text-content > .stripe {
+    border-radius: 5px;
     content: "";
-    width: 30px;
+    width: 40px;
     height: 5px;
     background-color: var(--primary-color);
     display: inline-block;
@@ -29,7 +36,13 @@
 }
 .content > .text-content > .text {
     font-family: MontserratExtraLight;
-    font-size: 14px;
+    font-size: 16px;
+}
+.text-content.light-text > .title, .text-content.light-text > .text {
+    color: #fff;
+}
+.text-content.light-text > .stripe {
+    background-color: #fff;
 }
 .content {
     padding: 0 0px 0 20px;
@@ -54,22 +67,44 @@
 *   CARDS
 *
 */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cards-container > .card {
+    margin-bottom: 60px;
+}
 .card {
     box-shadow: #ececec 0px 0px 15px;
     border-radius: 20px;
+    overflow: hidden;
 }
 .card:hover {
    box-shadow: #ececec 0px 0px 10px;
 }
 .card-body {
-    padding: 0px 40px;
+    background-color: #fff;
+    padding: 40px;
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
-.card-body > .card-desc {
+.card-body.centered {
+    padding: 0 40px;
+    justify-content: center;
+}
+.card-body div:not(:last-child) {
+    margin-bottom: 15px;
+}
+.card-body > .card-image {
+    box-shadow: #dadada 0 -1px 7px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 10px;
+}
+.card-body > .card-title {
     color: #888888;
     font-family: "Montserrat", Sans-serif;
     font-size: 18px;
@@ -78,4 +113,9 @@
     text-transform: uppercase;
     line-height: 1.2em;
     letter-spacing: 0.3px;
+}
+.card-body > .card-desc {
+    font-size: 14px;
+    font-family: MontserratLight;
+    text-align: center;
 }

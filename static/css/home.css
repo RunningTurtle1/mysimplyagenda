@@ -1,6 +1,3 @@
-.flex-container {
-    min-height: 569px;
-}
 /*
 *
 *   HOMEPAGE BANNER
@@ -114,6 +111,16 @@
 }
 #experience-image > img {
     max-width: 100%;
+}
+#solution-content {
+    background-image: url('/images/section-background.png');
+    background-origin: border-box;
+    max-width: unset;
+    display: flex;
+    justify-content: center;
+}
+#solution-content > .content {
+    max-width: 1140px;
 }
 
 /*
