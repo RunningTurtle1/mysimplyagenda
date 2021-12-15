@@ -237,14 +237,19 @@
     </div>
   </div>
 </section>
-<!-- <div>
-  Hey
-</div>
-<div style="display: flex; justify-content: center;">
-  {{ range first 5 (where .Site.Pages "Type" "post") }}
-    {{ partial "post-card.html" . }}
+<section class="flex-container">
+  <div class="content">
+    <div class="text-content">
+      <div class="stripe"></div>
+      <div class="title">Nos articles</div>
+    </div>
+    <div class="posts">
+      {{ range first 3 (where .Site.Pages "Type" "post") }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
 
-  {{ end }}
-</div> -->
 <script src="https://js-eu1.hs-analytics.net/analytics/1638971700000/25346861.js"></script>
 {{ end }}

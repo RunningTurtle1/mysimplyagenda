@@ -181,3 +181,51 @@
 .steps > .step:nth-child(even) {
     margin-top: 150px;
 }
+/*
+*
+*   POSTS CARDS
+*
+*/
+.posts {
+    display: flex;
+    justify-content: space-between;
+}
+.post-card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.06);
+    max-height: 450px;
+    max-width: 300px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+}
+.post-card .post-image, .post-card .post-image img {
+    max-width: 100%;
+}
+.post-card .title, .post-card .summary {
+    padding: 0 20px;
+}
+.post-card .title {
+    color: #000;
+    font-size: large;
+    font-family: MontserratBold;
+}
+.post-card .summary {
+    font-family: MontserratLight;
+    font-size: small;
+}
+.post-card .link {
+    position: absolute;
+    background-color: #fff;
+    bottom: 0px;
+    padding: 25px 20px;
+    right: 0px;
+    text-align: right;
+    width: 100%;
+    z-index: 10;
+}
+.post-card .link a {
+    color: var(--button-color);
+    text-decoration: none;
+}

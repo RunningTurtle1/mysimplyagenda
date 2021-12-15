@@ -1,7 +1,7 @@
 ---
 title: "La Transformation Digitale"
 date: 2021-12-07T20:14:10+02:00
-draft: true
+draft: false
 type: 'post'
 ---
 

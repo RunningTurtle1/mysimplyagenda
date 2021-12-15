@@ -1,5 +1,10 @@
-<h2>{{ .Title }}</h2>
-<div>{{ .Summary }}</div>
-{{ with .Resources.GetMatch "image.jpg" }}
-  <!-- <img src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}"> -->
-{{ end }}
+<div class="post-card">
+  {{ with .Resources.GetMatch "image.jpg" }}
+    <div class="post-image">
+      <img src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}">
+    </div>
+  {{ end }}
+  <h2 class="title">{{ .Title }}</h2>
+  <div class="summary">{{ .Summary }}</div>
+  <div class="link"><a href="{{ .Permalink }}">Lire la suite</a></div>
+</div>

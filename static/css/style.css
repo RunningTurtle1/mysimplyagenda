@@ -17,7 +17,7 @@
 body {
     --primary-color: #8AD5E4;
     --secondary-color: #2B70B1;
-    --tertiary-color: #2B3E7F;
+    --tertiary-color: #0C9CE5;
     --button-color: #2595FF;
     --title-color: #4B597B;
     font-family: Montserrat, Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -77,4 +77,30 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--secondary-color);
     bottom: -5px;
     left: calc(50% - 15px);
+}
+/*
+*
+*   FOOTER
+*
+*/
+footer {
+    background-color: var(--tertiary-color);
+    padding: 120px;
+    display: flex;
+}
+footer #footer-logo {
+    max-width: 350px;
+}
+footer p {
+    color: #fff;
+    font-family: MontserratBold;
+}
+footer nav ul li {
+    list-style-type: none;
+    margin-bottom: 5px;
+
+}
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
