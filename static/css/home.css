@@ -115,6 +115,7 @@
 #solution-content {
     background-image: url('/images/section-background.png');
     background-origin: border-box;
+    background-repeat: no-repeat;
     max-width: unset;
     display: flex;
     justify-content: center;
@@ -228,4 +229,109 @@
 .post-card .link a {
     color: var(--button-color);
     text-decoration: none;
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    #boost-content {
+        flex-direction: column-reverse;
+    }
+    .post-card {
+        max-width: 30%;
+    }
+}
+@media (max-width: 769px) {
+    /*
+    *
+    *   BANNER
+    *
+    */
+    .banner {
+        display: flex;
+        flex-direction: column-reverse;
+        height: unset;
+        justify-content: flex-start;
+    }
+    .banner > div {
+        position: unset;
+    }
+    .banner-text > .banner-title, .banner-text > .banner-subtitle {
+        max-width: 100% !important;
+    }
+    /*
+    *
+    *   BOOST CONTENT
+    *
+    */
+    #boost-content {
+        flex-direction: column-reverse;
+    }
+    #boost-content-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    #boost-content-cards > .content {
+        padding-left: 0;
+    }
+    /*
+    *
+    *
+    *
+    */
+    #experience-container {
+        flex-direction: column;
+    }
+    /*
+    *
+    *   COUNTER
+    *
+    */
+    .counter {
+        flex-direction: column;
+    }
+    .counter-elt {
+        margin-bottom: 40px;
+    }
+    /*
+    *
+    *   CARDS
+    *
+    */
+    .cards-container {
+        justify-content: center;
+    }
+    /*
+    *
+    *   STEPS
+    *
+    */
+    .steps {
+        flex-direction: column;
+    }
+    .steps > .step:nth-child(even) {
+        margin-top: 40px;
+    }
+    .step {
+        margin-top: 40px;
+    }
+    /*
+    *
+    *   POSTS
+    *
+    */
+    .posts {
+        flex-direction: column;
+        align-items: center;
+    }
+    .posts > .post-card {
+        margin-bottom: 40px;
+    }
+    /*
+    *
+    *   FOOTER
+    *
+    */
+    footer {
+        padding: 10px;
+        flex-direction: column;
+    }
 }

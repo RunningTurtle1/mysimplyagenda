@@ -5,6 +5,9 @@
     margin: auto;
     margin-top: 60px;
 }
+.flex-container:last-of-type {
+    margin-bottom: 60px;
+}
 .flex-container > .content {
     flex-grow: 1;
 }
