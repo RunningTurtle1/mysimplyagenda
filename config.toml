@@ -1,6 +1,7 @@
 baseURL = "https://runningturtle1.github.io/mysimplyagenda/"
 languageCode = "fr"
 title = "My New Hugo Site"
+staticDir = "mysimplyagenda"
 [menu]
   [[menu.main]]
     name = "Accueil"
