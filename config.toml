@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://runningturtle1.github.io/mysimplyagenda/"
 languageCode = "fr"
 title = "My New Hugo Site"
 [menu]
